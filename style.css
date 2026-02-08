@@ -1,0 +1,77 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top,#111,#000);
+  color:white;
+  padding:30px;
+}
+
+/* ===== JUDUL NEON ===== */
+.title{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:30px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #0ff,
+    0 0 20px #0ff;
+}
+
+/* ===== GRID ===== */
+.container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+/* ===== CARD ===== */
+.card{
+  padding:18px;
+  border-radius:14px;
+  transition:0.25s;
+  position:relative;
+  backdrop-filter: blur(8px);
+  border:2px solid rgba(255,255,255,0.1);
+}
+
+/* GLOW */
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow:0 0 20px var(--glow);
+}
+
+/* teks */
+.card h2{
+  margin:0 0 6px;
+}
+
+.card p{
+  font-size:14px;
+  opacity:.85;
+}
+
+/* tombol */
+.btns{
+  display:flex;
+  gap:10px;
+  margin-top:12px;
+}
+
+.btn{
+  flex:1;
+  padding:9px;
+  border-radius:8px;
+  text-align:center;
+  text-decoration:none;
+  font-weight:bold;
+  color:white;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  filter:brightness(1.2);
+}
+
+.btn1{ background:#00c853; }
+.btn2{ background:#2979ff; }
